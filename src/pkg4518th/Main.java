@@ -23,6 +23,8 @@ public class Main extends Application {
 
     Scene scene = new Scene(root);
 
+    stage.setX(100);
+    stage.setY(0);
     stage.setScene(scene);
     stage.show();
   }
