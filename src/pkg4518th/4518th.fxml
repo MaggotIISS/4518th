@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="912.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkg4518th.LIR4518th">
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkg4518th.LIR4518th">
   <children>
     <TextArea fx:id="ta" layoutY="409.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="391.0" prefWidth="912.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="409.0" />
     <TextArea fx:id="ta1" layoutX="8.0" layoutY="341.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="61.0" prefWidth="893.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="341.0" />
@@ -17,9 +17,9 @@
       </image>
     </ImageView>
     <TextField fx:id="tf" layoutX="501.0" layoutY="6.0" onAction="#numberAction" onMouseClicked="#numberClick" prefHeight="25.0" prefWidth="44.0" />
-    <Button fx:id="findButton" layoutX="545.0" layoutY="-57.0" mnemonicParsing="false" onAction="#findAction" prefHeight="25.0" prefWidth="44.0" text="Find" />
-    <TextField fx:id="RANK" editable="false" layoutX="571.0" layoutY="6.0" onAction="#rankAction" onMouseClicked="#rankClick" prefHeight="25.0" prefWidth="36.0" />
-    <ComboBox fx:id="cbo" layoutX="500.0" layoutY="6.0" onAction="#cboAction" prefHeight="25.0" prefWidth="70.0" />
+    <Button fx:id="findButton" layoutX="545.0" layoutY="6.0" mnemonicParsing="false" onAction="#findAction" prefHeight="25.0" prefWidth="44.0" text="Find" />
+    <TextField fx:id="RANK" editable="false" layoutX="590.0" layoutY="6.0" onAction="#rankAction" onMouseClicked="#rankClick" prefHeight="25.0" prefWidth="63.0" />
+    <ComboBox fx:id="cbo" layoutX="653.0" layoutY="6.0" onAction="#cboAction" prefHeight="25.0" prefWidth="70.0" />
     <CheckBox fx:id="byunit" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="729.0" layoutY="10.0" mnemonicParsing="false" onAction="#unitCheck" prefHeight="17.0" prefWidth="0.0" selected="true" />
     <ComboBox fx:id="combo1" layoutX="500.0" layoutY="31.0" onAction="#combo1Action" prefHeight="25.0" prefWidth="224.0" />
     <ComboBox fx:id="combo2" layoutX="500.0" layoutY="56.0" onAction="#combo2Action" prefHeight="25.0" prefWidth="224.0" />
