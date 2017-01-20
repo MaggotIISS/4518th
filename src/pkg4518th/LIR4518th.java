@@ -49,7 +49,6 @@ public class LIR4518th implements Initializable {
   private Label E;
   @FXML
   private Label Lines;
-  @FXML
   private CheckBox byrank;
   @FXML
   private CheckBox byunit;
@@ -94,7 +93,7 @@ public class LIR4518th implements Initializable {
   private String[] lines;
   private MouseEvent me;
   private Label rank;
-//  private ComboBox<String>[] combos;
+  private ComboBox<String>[] combos;
   private ComboBox<String> combox = new ComboBox<>();
   private String c1l = "", c2l = "", c3l = "", c4l = "", c5l = "";
   private String st = "";
@@ -127,6 +126,46 @@ public class LIR4518th implements Initializable {
     }
   }
 
+  private void clearPrev(int i) {
+    //<editor-fold defaultstate="collapsed" desc="IFD">
+    {
+      String s = "";
+      boolean DEBUG = true;  // true or false;
+      if (DEBUG) { // true or false
+        s += "//////////////////////////////////////////////" + CRLF;
+        s += "pkg4518th.LIR4518th.clearPrev()" + CRLF;
+        s += "\t" + Thread.currentThread().getStackTrace()[1].getMethodName() + CRLF;
+        //s += "" + " = " + "" + CRLF;
+        //s += "" + " = " + "" + CRLF;
+        System.out.println(s);
+      }
+    }
+    //</editor-fold>
+    for (int j = i - 1; j > 0; j--) {
+      System.out.println("j" + " = " + j);
+//      combos[j].setValue("");
+      switch (j) {
+        case 1: {
+          combo1.setValue("");
+          break;
+        }
+        case 2: {
+          combo2.setValue("");
+          break;
+        }
+        case 3: {
+          combo3.setValue("");
+          break;
+        }
+        case 4: {
+          combo4.setValue("");
+          break;
+        }
+      }
+
+    }
+  }
+
   @FXML
   private void dClick(MouseEvent event) {
     if (byunit.isSelected()) {
@@ -145,11 +184,23 @@ public class LIR4518th implements Initializable {
     }
   }
 
+  private void findRank(String text) {
+    ta.setText("");
+    for (int i = 0; i < lines.length; i++) {
+      if (lines[i].contains(text)) {
+        ta.appendText(lines[i] + CRLF);
+        search.setText("RANK");
+        col.setText("1");
+      }
+    }
+    Lines.setText("" + countLines());
+  }
+
   private void narrowing(int i) {
     //<editor-fold defaultstate="collapsed" desc="IFD">
     {
       String s = "";
-      boolean DEBUG = true;  // true or false;
+      boolean DEBUG = false;  // true or false;
       if (DEBUG) { // true or false
         s += "//////////////////////////////////////////////" + CRLF;
         s += "pkg4518th.LIR4518th.narrowing()" + CRLF;
@@ -200,6 +251,7 @@ public class LIR4518th implements Initializable {
               JOptionPane.showMessageDialog(null, jsp);
             }
             //</editor-fold>
+            break;
           }
         }
       } catch (Exception e) {
@@ -216,6 +268,75 @@ public class LIR4518th implements Initializable {
     countLines();
     search.setText(ta.getText());
     col.setText("" + i);
+    clearPrev(i);
+  }
+
+  private void searchCol(String text) {
+    //<editor-fold defaultstate="collapsed" desc="IFD">
+    {
+      String s = "";
+      boolean DEBUG = false;  // true or false;
+      if (DEBUG) { // true or false
+        s += "//////////////////////////////////////////////" + CRLF;
+        s += "pkg4518th.LIR4518th.searchCol()" + CRLF;
+        s += "\t" + Thread.currentThread().getStackTrace()[1].getMethodName() + CRLF;
+        System.out.println(s);
+      }
+    }
+    //</editor-fold>
+    ta.setText("");
+    int a = 0;
+    String string = "";// search for this
+    ComboBox combo = null;// place values here
+    list = "";
+    try {
+      switch (text) {
+        case "A": {
+          combo = combo1;
+          a = 1;
+          break;
+        }
+        case "B": {
+          combo = combo2;
+          a = 2;
+          break;
+        }
+        case "C": {
+          combo = combo3;
+          a = 3;
+          break;
+        }
+        case "D": {
+          combo = combo4;
+          a = 4;
+          break;
+        }
+        case "E": {
+          combo = combo5;
+          a = 5;
+          break;
+        }
+        default: {
+          System.out.println("" + " = ");
+        }
+      }
+    } catch (Exception e) {
+      System.out.println("323 e" + " = " + e);
+    }
+    string = combo.getValue().toString();
+    ta1.setText("");
+    for (int i = 0; i < lines.length; i++) {
+      if (lines[i].contains(string)) {
+        search.setText(string);
+        ta.appendText(lines[i] + CRLF);
+        if (!ta1.getText().contains(string)) {
+          ta1.appendText(string + CRLF);
+        }
+      }
+    }
+    countLines();
+    col.setText("" + a);
+    clearPrev(a);
   }
 
   private void setCombo(int num, String str) {
@@ -316,73 +437,6 @@ public class LIR4518th implements Initializable {
     }
   }
 
-  private void searchCol(String text) {
-    //<editor-fold defaultstate="collapsed" desc="IFD">
-    {
-      String s = "";
-      boolean DEBUG = true;  // true or false;
-      if (DEBUG) { // true or false
-        s += "//////////////////////////////////////////////" + CRLF;
-        s += "pkg4518th.LIR4518th.searchCol()" + CRLF;
-        s += "\t" + Thread.currentThread().getStackTrace()[1].getMethodName() + CRLF;
-        System.out.println(s);
-      }
-    }
-    //</editor-fold>
-    ta.setText("");
-    int a = 0;
-    String string = "";// search for this
-    ComboBox combo = null;// place values here
-    list = "";
-    try {
-      switch (text) {
-        case "A": {
-          combo = combo1;
-          a = 1;
-          break;
-        }
-        case "B": {
-          combo = combo2;
-          a = 2;
-          break;
-        }
-        case "C": {
-          combo = combo3;
-          a = 3;
-          break;
-        }
-        case "D": {
-          combo = combo4;
-          a = 4;
-          break;
-        }
-        case "E": {
-          combo = combo5;
-          a = 5;
-          break;
-        }
-        default: {
-          System.out.println("" + " = ");
-        }
-      }
-    } catch (Exception e) {
-      System.out.println("323 e" + " = " + e);
-    }
-    string = combo.getValue().toString();
-    ta1.setText("");
-    for (int i = 0; i < lines.length; i++) {
-      if (lines[i].contains(string)) {
-        search.setText(string);
-        ta.appendText(lines[i] + CRLF);
-        if (!ta1.getText().contains(string)) {
-          ta1.appendText(string + CRLF);
-        }
-      }
-    }
-    countLines();
-    col.setText("" + a);
-  }
-
   @FXML
   private void countLines(MouseEvent event) {
     countLines();
@@ -399,7 +453,7 @@ public class LIR4518th implements Initializable {
     //<editor-fold defaultstate="collapsed" desc="IFD">
     {
       String s = "";
-      boolean DEBUG = true;  // true or false;
+      boolean DEBUG = false;  // true or false;
       if (DEBUG) { // true or false
         s += "//////////////////////////////////////////////" + CRLF;
         s += "pkg4518th.LIR4518th.cboAction()" + CRLF;
@@ -518,6 +572,10 @@ public class LIR4518th implements Initializable {
       }
       case 4: {
         combox = combo4;
+        break;
+      }
+      case 5: {
+        combox = combo5;
         break;
       }
       default: {
@@ -671,7 +729,7 @@ public class LIR4518th implements Initializable {
     //<editor-fold defaultstate="collapsed" desc="IFD">
     {
       String s = "";
-      boolean DEBUG = false;  // true or false;
+      boolean DEBUG = true;  // true or false;
       if (DEBUG) { // true or false
         s += "//////////////////////////////////////////////" + CRLF;
         s += "\t" + Thread.currentThread().getStackTrace()[1].getMethodName() + CRLF;
@@ -681,6 +739,7 @@ public class LIR4518th implements Initializable {
       }
     }
     //</editor-fold>
+    findRank(RANK.getText());
   }
 
   @FXML
@@ -688,7 +747,7 @@ public class LIR4518th implements Initializable {
     //<editor-fold defaultstate="collapsed" desc="IFD">
     {
       String s = "";
-      boolean DEBUG = false;  // true or false;
+      boolean DEBUG = true;  // true or false;
       if (DEBUG) { // true or false
         s += "//////////////////////////////////////////////" + CRLF;
         s += "\t" + Thread.currentThread().getStackTrace()[1].getMethodName() + CRLF;
@@ -698,6 +757,7 @@ public class LIR4518th implements Initializable {
       }
     }
     //</editor-fold>
+    findRank(RANK.getText());
   }
 
   @Override
@@ -743,30 +803,46 @@ public class LIR4518th implements Initializable {
     ActionEvent ae = null;
     findAction(ae);
     ComboBox<String> combo = new ComboBox<>();
+    Tooltip[] tips = new Tooltip[6];
+    Tooltip tip;
     for (int i = 0; i < 6; i++) {
       switch (i) {
         case 0: {
           combo = cbo;
+          tip = new Tooltip("help");
         }
         case 1: {
           combo = combo1;
+          tip = new Tooltip("help");
         }
         case 2: {
           combo = combo2;
+          tip = new Tooltip("help");
         }
         case 3: {
           combo = combo3;
+          tip = new Tooltip("help");
         }
         case 4: {
           combo = combo4;
+          tip = new Tooltip("help");
         }
         case 5: {
           combo = combo5;
+          tip = new Tooltip("help");
         }
+        combo.setTooltip(tip);
+        setCombo(i, combo.getValue());
       }
-      setCombo(i, combo.getValue());
     }
     cbo.setValue("279");
+    combos = new ComboBox[5];
+    combos[0] = combo1;
+    combos[0] = combo2;
+    combos[2] = combo3;
+    combos[3] = combo4;
+    combos[4] = combo5;
+    ta1.setVisible(false);
   }
 
   @FXML
@@ -970,6 +1046,8 @@ public class LIR4518th implements Initializable {
       showMarine(lines[num - 1]);
     }
     countLines();
+    search.setText("" + num);
+    col.setText("0");
   }
 
   private void findRank(MouseEvent event) {
@@ -1162,7 +1240,6 @@ public class LIR4518th implements Initializable {
     }
   }
 
-  @FXML
   private void rankCheck(ActionEvent event) {
     //<editor-fold defaultstate="collapsed" desc="IFD">
     {

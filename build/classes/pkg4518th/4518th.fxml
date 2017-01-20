@@ -9,9 +9,9 @@
 
 <AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkg4518th.LIR4518th">
   <children>
-    <TextArea fx:id="ta" layoutY="409.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="391.0" prefWidth="912.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="409.0" />
-    <TextArea fx:id="ta1" layoutX="8.0" layoutY="341.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="61.0" prefWidth="893.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="341.0" />
-    <ImageView fx:id="pic" fitHeight="341.0" fitWidth="482.0" onMouseClicked="#picClick" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+    <TextArea fx:id="ta" layoutY="343.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="457.0" prefWidth="768.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="343.0" />
+    <TextArea fx:id="ta1" layoutY="815.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="61.0" prefWidth="893.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="815.0" />
+    <ImageView fx:id="pic" fitHeight="349.0" fitWidth="482.0" onMouseClicked="#picClick" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
       <image>
         <Image fx:id="img" url="@4518th.gif" />
       </image>
@@ -28,16 +28,16 @@
     <ComboBox fx:id="combo5" layoutX="500.0" layoutY="131.0" onAction="#combo5Action" onMouseClicked="#combo5Click" prefHeight="25.0" prefWidth="224.0" visibleRowCount="5" />
     <TextField fx:id="search" layoutX="501.0" layoutY="156.0" prefHeight="25.0" prefWidth="184.0" text="Jump Troops" />
     <TextField fx:id="col" layoutX="688.0" layoutY="156.0" prefHeight="25.0" prefWidth="36.0" text="3" />
-    <Label fx:id="A" layoutX="730.0" layoutY="35.0" onMouseClicked="#aClick" text="A" />
-    <Label fx:id="B" layoutX="731.0" layoutY="60.0" onMouseClicked="#bClick" text="B" />
-    <Label fx:id="C" layoutX="730.0" layoutY="85.0" onMouseClicked="#cClick" text="C" />
-    <Label fx:id="D" layoutX="730.0" layoutY="110.0" onMouseClicked="#dClick" text="D" />
+    <Label fx:id="A" layoutX="730.0" layoutY="35.0" onMouseClicked="#aClick" text="Click" />
+    <Label fx:id="B" layoutX="731.0" layoutY="60.0" onMouseClicked="#bClick" text="Click" />
+    <Label fx:id="C" layoutX="730.0" layoutY="85.0" onMouseClicked="#cClick" text="Click" />
+    <Label fx:id="D" layoutX="730.0" layoutY="110.0" onMouseClicked="#dClick" text="Click" />
     <Label fx:id="Lines" layoutX="730.0" layoutY="160.0" onMouseClicked="#countLines" text="LINES" />
-    <ImageView fx:id="view" fitHeight="150.0" fitWidth="200.0" layoutX="505.0" layoutY="181.0" onMouseClicked="#badgeClick" pickOnBounds="true" preserveRatio="true">
+    <ImageView fx:id="view" fitHeight="150.0" fitWidth="200.0" layoutX="501.0" layoutY="181.0" onMouseClicked="#badgeClick" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@4518Coin.jpeg" />
       </image>
     </ImageView>
-    <Label fx:id="E" layoutX="731.0" layoutY="135.0" onMouseClicked="#eClick" text="E" />
+    <Label fx:id="E" layoutX="731.0" layoutY="135.0" onMouseClicked="#eClick" text="Click" />
   </children>
 </AnchorPane>
