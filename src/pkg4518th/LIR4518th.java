@@ -6,6 +6,7 @@
 package pkg4518th;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -27,6 +28,9 @@ import javafx.scene.control.Tooltip;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Pane;
+import javafx.stage.FileChooser;
+import javafx.stage.FileChooser.ExtensionFilter;
 import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
@@ -37,6 +41,9 @@ import javax.swing.JTextArea;
  */
 public class LIR4518th implements Initializable {
 
+//  public LIR4518th() {
+//    this.labels = new Label[]{A, B, C, D, E};
+//  }
   @FXML
   private Label A;
   @FXML
@@ -65,14 +72,57 @@ public class LIR4518th implements Initializable {
   @FXML
   private ComboBox<String> combo5;
   @FXML
+  private Pane counterpane;
+  private FileChooser fileChooser;
+  @FXML
+  private TextField filename;
+  @FXML
   private Button findButton;
   @FXML
   private Image img;
   private Image img2;
   @FXML
+  private ImageView iv;
+  @FXML
   private ImageView pic;
   @FXML
   private TextArea ta1;
+  @FXML
+  private TextField tf1;
+  @FXML
+  private TextField tf10;
+  @FXML
+  private TextField tf11;
+  @FXML
+  private TextField tf12;
+  @FXML
+  private TextField tf13;
+  @FXML
+  private TextField tf14;
+  @FXML
+  private TextField tf15;
+  @FXML
+  private TextField tf16;
+  @FXML
+  private TextField tf17;
+  @FXML
+  private TextField tf2;
+  @FXML
+  private TextField tf3;
+  @FXML
+  private TextField tf4;
+  @FXML
+  private TextField tf5;
+  @FXML
+  private TextField tf6;
+  @FXML
+  private TextField tf7;
+  @FXML
+  private TextField tf8;
+  @FXML
+  private TextField tf9;
+  @FXML
+  private Pane trooperpane;
   @FXML
   private ImageView view;
   @FXML
@@ -98,6 +148,7 @@ public class LIR4518th implements Initializable {
   private String c1l = "", c2l = "", c3l = "", c4l = "", c5l = "";
   private String st = "";
   private String list = "";
+  private Label[] labels = labels = new Label[]{A, B, C, D, E};
 
   @FXML
   private void aClick(MouseEvent event) {
@@ -141,9 +192,13 @@ public class LIR4518th implements Initializable {
       }
     }
     //</editor-fold>
+    for (int j = i; j < 5; j++) {
+//      combos[j].getSelectionModel().clearSelection();
+//      labels[j].setVisible(true);
+      System.out.println("combos[i]" + " = " + combos[i]);
+    }
     for (int j = i - 1; j > 0; j--) {
       System.out.println("j" + " = " + j);
-//      combos[j].setValue("");
       switch (j) {
         case 1: {
           combo1.setValue("");
@@ -162,7 +217,7 @@ public class LIR4518th implements Initializable {
           break;
         }
       }
-
+//      labels[j].setVisible(false);
     }
   }
 
@@ -194,6 +249,26 @@ public class LIR4518th implements Initializable {
       }
     }
     Lines.setText("" + countLines());
+  }
+
+  @FXML
+  private void ivClick(MouseEvent event) {
+    fileChooser = new FileChooser();
+    File dir = new File("C:\\T5\\Spinward Marches\\C Regina\\1910 Regina\\1910 Regina");
+    System.out.println("dir.exists()" + " = " + dir.exists());
+    fileChooser.setInitialDirectory(dir);
+// FileChooser fileChooser = new FileChooser();
+    fileChooser.setTitle("Open Resource File");
+    fileChooser.getExtensionFilters().addAll(
+      new ExtensionFilter("Text Files", "*.txt"),
+      new ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif"),
+      new ExtensionFilter("Audio Files", "*.wav", "*.mp3", "*.aac"),
+      new ExtensionFilter("All Files", "*.*"));
+    File selectedFile = fileChooser.showOpenDialog(null);
+    if (selectedFile != null) {
+//    mainStage.display(selectedFile);
+      System.out.println("" + " = " + selectedFile.getAbsolutePath());
+    }
   }
 
   private void narrowing(int i) {
@@ -288,6 +363,9 @@ public class LIR4518th implements Initializable {
     int a = 0;
     String string = "";// search for this
     ComboBox combo = null;// place values here
+//    for (int j = 0; j < 5; j++) {
+//      labels[j].setVisible(true);
+//    }
     list = "";
     try {
       switch (text) {
@@ -553,6 +631,20 @@ public class LIR4518th implements Initializable {
   }
 
   private void tryit(int num) {
+    //<editor-fold defaultstate="collapsed" desc="IFD">
+    {
+      String s = "";
+      boolean DEBUG = true;  // true or false;
+      if (DEBUG) { // true or false
+        s += "//////////////////////////////////////////////" + CRLF;
+        s += "pkg4518th.LIR4518th.tryit()" + CRLF;
+        s += "\t" + Thread.currentThread().getStackTrace()[1].getMethodName() + CRLF;
+        s += "num" + " = " + num + CRLF;
+        //s += "" + " = " + "" + CRLF;
+        System.out.println(s);
+      }
+    }
+    //</editor-fold>
     switch (num) {
 //      case 0: {
 //        combox = cbo;
@@ -597,17 +689,19 @@ public class LIR4518th implements Initializable {
     }
     ta1.setText("");
 //    ta.appendText(splitter + CRLF);
-    try {
-      for (int i = 0; i < lines.length; i++) {
-        if (strings[i][num].contains(combox.getValue())) {
+    for (int i = 0; i < lines.length; i++) {
+      if (strings[i][num].contains(combox.getValue())) {
+        try {
           ta1.appendText(lines[i] + CRLF);
+        } catch (Exception e) {
+//          System.out.println("284 e" + " = " + e);
+//          System.out.println("i" + " = " + i);
+//          System.out.println("num" + " = " + num);
         }
       }
-    } catch (Exception e) {
-      System.out.println("284 e" + " = " + e);
     }
     int end = ta1.getText().split(CRLF).length;
-    Arrays.sort(ta1.getText().split(CRLF), 0, end);
+    Arrays.sort(ta1.getText().trim().split(CRLF), 0, end);
     countLines();
   }
 
@@ -762,11 +856,19 @@ public class LIR4518th implements Initializable {
 
   @Override
   public void initialize(URL url, ResourceBundle rb) {
+    A.setText("Click");
+    B.setText("Click");
+    C.setText("Click");
+    D.setText("Click");
+    E.setText("Click");
     RANK.setEditable(true);
 //    System.out.println("rb.getBaseBundleName()" + " = " + rb.getBaseBundleName());
     BufferedReader br;
     try {
+//      br = new BufferedReader(new FileReader("/" + T5 + FS + "4518th.csv"));
       br = new BufferedReader(new FileReader("/" + T5 + FS + "4518th.csv"));
+      System.out.println("" + " = " + LIR4518th.class.getResource("4518.txt"));
+//      br = new BufferedReader(new FileReader(str));
       String line;
       ta.setText("");
       int num = 0;
@@ -805,6 +907,12 @@ public class LIR4518th implements Initializable {
     ComboBox<String> combo = new ComboBox<>();
     Tooltip[] tips = new Tooltip[6];
     Tooltip tip;
+    combos = new ComboBox[5];
+    combos[0] = combo1;
+    combos[0] = combo2;
+    combos[2] = combo3;
+    combos[3] = combo4;
+    combos[4] = combo5;
     for (int i = 0; i < 6; i++) {
       switch (i) {
         case 0: {
@@ -836,12 +944,6 @@ public class LIR4518th implements Initializable {
       }
     }
     cbo.setValue("279");
-    combos = new ComboBox[5];
-    combos[0] = combo1;
-    combos[0] = combo2;
-    combos[2] = combo3;
-    combos[3] = combo4;
-    combos[4] = combo5;
     ta1.setVisible(false);
   }
 
@@ -1272,6 +1374,9 @@ public class LIR4518th implements Initializable {
       }
     }
     //</editor-fold>
+    for (int i = 0; i < labels.length; i++) {
+      labels[i].setVisible(true);
+    }
   }
 
 }
