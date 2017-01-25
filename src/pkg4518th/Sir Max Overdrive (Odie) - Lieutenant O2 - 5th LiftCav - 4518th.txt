@@ -1,4 +1,4 @@
-HHHFGH
+HHHFGH (Vargr translation)
 Hit Hard, Hit Fast, Go Home
 
 
@@ -6,61 +6,61 @@ No.
 ID
 Position (Rank)
 Unit
-Parent Unitshttps://www.youtube.com/watch?v=GfOIA9GXgek
+Parent Units
 
 Command Roster, 4518th Lift Infantry Regiment (circa 1105)
 
 			277
-			Platoon Leader (Lieutenant O2), 
-			Third Platoon, 
-			Alpha Troop (Lift Cavalry), 
+			Platoon Leader (Lieutenant O2),
+			Third Platoon,
+			Alpha Troop (Lift Cavalry),
 			Fifth Squadron (Lift Cavalry), 4518th Lift Infantry Regiment
 
 			278
-			Platoon Leader (Lieutenant O2), 
-			Third Platoon, 
-			Beta Troop (Lift Cavalry), 
-			Fifth Squadron (Lift Cavalry), 
+			Platoon Leader (Lieutenant O2),
+			Third Platoon,
+			Beta Troop (Lift Cavalry),
+			Fifth Squadron (Lift Cavalry),
 			4518th Lift Infantry Regiment
 
 ///////////////////////////////////////////
 ///////////////////////////////////////////
 279
-Max Overdrive (Odie/Pitsy/Sox) MCG - The Battle of Mongo
+Max `OverDrive` Odie MCG - The Battle of Mongo
 Platoon Leader (Lieutenant O2),
-Third Platoon, Delta Troop (Lift Cavalry), 
-Fifth Squadron (Lift Cavalry), 
+Third Platoon, Delta Troop (Lift Cavalry),
+Fifth Squadron (Lift Cavalry),
 4518th Lift Infantry Regiment		24men 2APCs 2Tanks
 ///////////////////////////////////////////
 ///////////////////////////////////////////
 
 			280
-			Platoon Leader (Lieutenant O2), 
-			Third Platoon, 
-			Gamma Troop (Lift Cavalry), 
-			Fifth Squadron (Lift Cavalry), 
+			Platoon Leader (Lieutenant O2),
+			Third Platoon,
+			Gamma Troop (Lift Cavalry),
+			Fifth Squadron (Lift Cavalry),
 			4518th Lift Infantry Regiment
 
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Unit 						Officers 	Troops 	APCs 	Tanks MRLs RDMs Fighters Ships
@@ -68,80 +68,80 @@ Unit 						Officers 	Troops 	APCs 	Tanks MRLs RDMs Fighters Ships
 
 
 
-4518thLIR										
-	HQS									
-	LAC									
-	FLC									
-	MES									
+4518thLIR
+	HQS
+	LAC
+	FLC
+	MES
 
 	4518thLIReg.		OFFS	MEN	ASTRIN	BERGS.	MRLs	RDMs	FIGHTERS	SHIPS
-RegimentalHQ	RegHQ		7	23	3				1	
-ArtilleryBattery	ArtilleryBattery		4	50	1		4	4		
-MedicalSection			3	20	4					
-FighterWingHQ	FighterWingHQ		2	4					2	
-		FighterSquadron	11	10					10	
-		TransportSquadron	1	21						
-		OrtillerySquadron	9	21						
+RegimentalHQ	RegHQ		7	23	3				1
+ArtilleryBattery	ArtilleryBattery		4	50	1		4	4
+MedicalSection			3	20	4
+FighterWingHQ	FighterWingHQ		2	4					2
+		FighterSquadron	11	10					10
+		TransportSquadron	1	21
+		OrtillerySquadron	9	21
 LIBHQ			3	10	4					3
-	1LIHQ		3	10	1					
-	2LIHQ		3	10	1	
-	3LIHQ		3	10	1	
-	1LIP		1	39	4	
-	2LIP		1	39	4	
-	3LIP		1	39	4	
-	4LIP		1	39	4	
-	5LIP		1	39	4	
-	6LIP		1	39	4	
-	7LIP		1	39	4	
-	8LIP		1	39	4	
-	9LIP		1	39	4	
+	1LIHQ		3	10	1
+	2LIHQ		3	10	1
+	3LIHQ		3	10	1
+	1LIP		1	39	4
+	2LIP		1	39	4
+	3LIP		1	39	4
+	4LIP		1	39	4
+	5LIP		1	39	4
+	6LIP		1	39	4
+	7LIP		1	39	4
+	8LIP		1	39	4
+	9LIP		1	39	4
 	1GTHQ		2	5		1
 	1GTP		1	18		4
 	2GTP		1	18		4
 	3GTP		1	18		4
-	1LAHQ		2	6		
-	1MRL		1	22			4	
+	1LAHQ		2	6
+	1MRL		1	22			4
 	1RDM		1	22				4
-LCSHQ			4	10	3			
-	1LCHQ		2	4		1		
-	2LCHQ		2	4		1		
-	3LCHQ		2	4		1		
-	1LCP		1	24	2	2		
-	2LCP		1	24	2	2		
+LCSHQ			4	10	3
+	1LCHQ		2	4		1
+	2LCHQ		2	4		1
+	3LCHQ		2	4		1
+	1LCP		1	24	2	2
+	2LCP		1	24	2	2
 /////////////////////////////////////////////////
-	3LCP		1	24	2	2		
+	3LCP		1	24	2	2
 /////////////////////////////////////////////////
-	4LCP		1	24	2	2		
-	5LCP		1	24	2	2		
-	6LCP		1	24	2	2		
-	7LCP		1	24	2	2		
-	8LCP		1	24	2	2		
-	9LCP		1	24	2	2		
-JTBHQ			4	10	3			
-	1JTCHQ		2	5	1	
-	2JTCHQ		2	5	1	
-	3JTCHQ		2	5	1	
-	1JTP		1	33		
-	2JTP		1	33		
-	3JTP		1	33		
-	4JTP		1	33		
-	5JTP		1	33		
-	6JTP		1	33		
-	7JTP		1	33		
-	8JTP		1	33		
-	9JTP		1	33		
+	4LCP		1	24	2	2
+	5LCP		1	24	2	2
+	6LCP		1	24	2	2
+	7LCP		1	24	2	2
+	8LCP		1	24	2	2
+	9LCP		1	24	2	2
+JTBHQ			4	10	3
+	1JTCHQ		2	5	1
+	2JTCHQ		2	5	1
+	3JTCHQ		2	5	1
+	1JTP		1	33
+	2JTP		1	33
+	3JTP		1	33
+	4JTP		1	33
+	5JTP		1	33
+	6JTP		1	33
+	7JTP		1	33
+	8JTP		1	33
+	9JTP		1	33
 	1JTTHQ		2	5		1
 	1JTGT		1	18		4
 	2JTGT		1	18		4
 	3JTGT		1	18		4
-	1JTA		2	22	1		4			
-	1JTS		1	20	3					
+	1JTA		2	22	1		4
+	1JTS		1	20	3
 
-	
-	
-	
-	
-	
+
+
+
+
+
 	1
 No. Position (Rank), Unit, Parent Units Page 1
 Command Roster, 4518th Lift Infantry Regiment (circa 1105)
@@ -1269,7 +1269,7 @@ Command Roster, 4518th Lift Infantry Regiment (circa 1105)
 1055 First Sqd Ldr (Sgt S3), First Platoon, Delta Troop (Grav Tank), Tenth Reserve Battalion (Jump Troops), 4518th Lift Infantry Regiment
 1056 First Sqd Ldr (Sgt S3), First Platoon, Gamma Company (Jump Troops), Tenth Reserve Battalion (Jump Troops), 4518th Lift Infantry Regiment
 1057 First Sqd Ldr (Sgt S3), Second Platoon, Alpha Company (Jump Troops), Tenth Reserve Battalion (Jump Troops), 4518th Lift Infantry Regiment
-1058 First Sqd Ldr (Sgt S3), Second Platoon, Beta Company (Jump Troops), Tenth Reserve Battalion (Jump Troops), 4518th Lift Infantry Regiment	
+1058 First Sqd Ldr (Sgt S3), Second Platoon, Beta Company (Jump Troops), Tenth Reserve Battalion (Jump Troops), 4518th Lift Infantry Regiment
 	24
 No. Position (Rank), Unit, Parent Units Page 24
 Command Roster, 4518th Lift Infantry Regiment (circa 1105)
@@ -1318,7 +1318,7 @@ Command Roster, 4518th Lift Infantry Regiment (circa 1105)
 1101 Third Sqd Ldr (Sgt S3), Third Platoon, Beta Company (Jump Troops), Tenth Reserve Battalion (Jump Troops), 4518th Lift Infantry Regiment
 1102 Third Sqd Ldr (Sgt S3), Third Platoon, Delta Troop (Grav Tank), Tenth Reserve Battalion (Jump Troops), 4518th Lift Infantry Regiment
 1103 Third Sqd Ldr (Sgt S3), Third Platoon, Gamma Company (Jump Troops), Tenth Reserve Battalion (Jump Troops), 4518th Lift Infantry Regiment
-1104 Clerk (Sgt S3), Headquarters, Eleventh Reserve Battalion (Anti-Psionic), 4518th Lift Infantry Regiment	
+1104 Clerk (Sgt S3), Headquarters, Eleventh Reserve Battalion (Anti-Psionic), 4518th Lift Infantry Regiment
 	25
 No. Position (Rank), Unit, Parent Units Page 25
 Command Roster, 4518th Lift Infantry Regiment (circa 1105)
