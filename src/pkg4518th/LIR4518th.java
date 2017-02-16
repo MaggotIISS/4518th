@@ -177,7 +177,7 @@ public class LIR4518th implements Initializable {
     //</editor-fold>
 //    BufferedReader breader = new BufferedReader(new FileReader("C://T5/4518.txt"));
     URL url = new URL("file:" + getClass().getResource("/4518th.txt"));
-    System.out.println("url" + " = \n" + url);
+    System.out.println("url" + " = " + url);
     BufferedReader breader = new BufferedReader(new FileReader(url.toString().substring(5)));
     String linecontent;
     String all = "";
@@ -325,7 +325,7 @@ public class LIR4518th implements Initializable {
       + "https://github.com/MaggotIISS\n"
       + "\n"
       + "The Traveller game in all forms is owned by Far Future Enterprises. \n"
-      + "Copyright 1977 - 20016 Far Future Enterprises. \n"
+      + "Copyright 1977 - 2017 Far Future Enterprises. \n"
       + "\n"
       + "Traveller is a registered trademark of Far Future Enterprises. \n"
       + "Far Future permits web sites and fanzines for this game, provided \n"
