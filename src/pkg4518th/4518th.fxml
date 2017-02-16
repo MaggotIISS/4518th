@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.canvas.*?>
 <?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -9,7 +11,7 @@
 
 <AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkg4518th.LIR4518th">
   <children>
-    <TextArea fx:id="ta" layoutY="343.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="457.0" prefWidth="482.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="286.0" AnchorPane.topAnchor="343.0" />
+    <TextArea fx:id="ta" layoutY="343.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#taClick" prefHeight="457.0" prefWidth="482.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="286.0" AnchorPane.topAnchor="343.0" />
     <TextArea fx:id="ta1" layoutY="815.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="61.0" prefWidth="893.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="815.0" />
     <ImageView fx:id="pic" fitHeight="349.0" fitWidth="482.0" onMouseClicked="#picClick" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
       <image>
@@ -41,37 +43,37 @@
           <Label fx:id="D" layoutX="230.0" layoutY="104.0" onMouseClicked="#dClick" text="Click" />
           <TextField fx:id="tf" layoutX="1.0" onAction="#numberAction" onMouseClicked="#numberClick" prefHeight="25.0" prefWidth="44.0" />
           <Label fx:id="B" layoutX="231.0" layoutY="54.0" onMouseClicked="#bClick" text="Click" />
+            <TextField fx:id="sec" layoutX="150.0" layoutY="175.0" prefHeight="25.0" prefWidth="116.0" text="Spinward Marches" />
+            <TextField fx:id="sub" layoutX="150.0" layoutY="200.0" prefHeight="25.0" prefWidth="116.0" text="C Regina" />
+            <TextField fx:id="sys" layoutX="150.0" layoutY="225.0" prefHeight="25.0" prefWidth="116.0" text="1910 Regina" />
+            <Label alignment="CENTER" layoutX="194.0" layoutY="250.0" onMouseClicked="#showAbout" text="ABOUT" />
          </children>
       </Pane>
       <Pane fx:id="counterpane" layoutX="500.0" layoutY="343.0" prefHeight="457.0" prefWidth="200.0">
          <children>
-            <TextField fx:id="tf1" layoutY="150.0" prefHeight="25.0" prefWidth="100.0" />
-            <TextField fx:id="tf6" layoutY="275.0" prefHeight="25.0" prefWidth="100.0" />
             <TextField fx:id="filename" layoutY="125.0" prefHeight="25.0" prefWidth="200.0" />
-            <TextField layoutX="100.0" layoutY="150.0" prefHeight="25.0" prefWidth="100.0" />
-            <TextField fx:id="tf15" layoutX="100.0" layoutY="275.0" prefHeight="25.0" prefWidth="100.0" />
-            <TextField fx:id="tf3" layoutY="200.0" prefHeight="25.0" prefWidth="100.0" />
-            <TextField fx:id="tf10" layoutY="375.0" prefHeight="25.0" prefWidth="100.0" />
-            <TextField fx:id="tf14" layoutX="100.0" layoutY="300.0" prefHeight="25.0" prefWidth="100.0" />
-            <TextField fx:id="tf17" layoutX="100.0" layoutY="225.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="tf1" layoutY="150.0" prefHeight="25.0" prefWidth="100.0" />
             <TextField fx:id="tf2" layoutY="175.0" prefHeight="25.0" prefWidth="100.0" />
-            <TextField fx:id="tf5" layoutY="250.0" prefHeight="25.0" prefWidth="100.0" />
-            <TextField fx:id="tf9" layoutY="350.0" prefHeight="25.0" prefWidth="100.0" />
-            <TextField fx:id="tf12" layoutX="100.0" layoutY="350.0" prefHeight="25.0" prefWidth="100.0" />
-            <TextField layoutX="100.0" layoutY="200.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="tf3" layoutY="200.0" prefHeight="25.0" prefWidth="100.0" />
             <TextField fx:id="tf4" layoutY="225.0" prefHeight="25.0" prefWidth="100.0" />
-            <TextField fx:id="tf16" layoutX="100.0" layoutY="250.0" prefHeight="25.0" prefWidth="100.0" />
-            <TextField fx:id="tf11" layoutX="100.0" layoutY="375.0" prefHeight="25.0" prefWidth="100.0" />
-            <ImageView fx:id="iv" fitHeight="100.0" fitWidth="200.0" onMouseClicked="#ivClick" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../T5/Spinward%20Marches/C%20Regina/1910%20Regina/1910%20Regina/1910%20Regina.gif" />
-               </image>
-            </ImageView>
+            <TextField fx:id="tf5" layoutY="250.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="tf6" layoutY="275.0" prefHeight="25.0" prefWidth="100.0" />
             <TextField fx:id="tf7" layoutY="300.0" prefHeight="25.0" prefWidth="100.0" />
             <TextField fx:id="tf8" layoutY="325.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="tf9" layoutY="350.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="tf10" layoutY="375.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="tf11" layoutX="100.0" layoutY="150.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="tf12" layoutX="100.0" layoutY="175.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="tf13" layoutX="100.0" layoutY="200.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="tf14" layoutX="100.0" layoutY="225.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="tf15" layoutX="100.0" layoutY="250.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="tf16" layoutX="100.0" layoutY="275.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="tf17" layoutX="100.0" layoutY="300.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="tf18" layoutX="100.0" layoutY="325.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="tf19" layoutX="100.0" layoutY="350.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="tf20" layoutX="100.0" layoutY="375.0" prefHeight="25.0" prefWidth="100.0" />
             <ComboBox layoutY="100.0" prefHeight="25.0" prefWidth="200.0" />
-            <TextField fx:id="tf13" layoutX="100.0" layoutY="325.0" prefHeight="25.0" prefWidth="100.0" />
-            <TextField layoutX="100.0" layoutY="175.0" prefHeight="25.0" prefWidth="100.0" />
+            <Canvas fx:id="canvas" height="100.0" onMouseClicked="#canvasClick" width="200.0" />
          </children>
       </Pane>
   </children>
