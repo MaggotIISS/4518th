@@ -61,19 +61,19 @@ public class LIR4518th implements Initializable {
   @FXML
   private Canvas canvas;
   @FXML
-  private ComboBox<?> cbo;
+  private ComboBox<String> cbo;
   @FXML
   private TextField col;
   @FXML
-  private ComboBox<?> combo1;
+  private ComboBox<String> combo1;
   @FXML
-  private ComboBox<?> combo2;
+  private ComboBox<String> combo2;
   @FXML
-  private ComboBox<?> combo3;
+  private ComboBox<String> combo3;
   @FXML
-  private ComboBox<?> combo4;
+  private ComboBox<String> combo4;
   @FXML
-  private ComboBox<?> combo5;
+  private ComboBox<String> combo5;
   @FXML
   private Pane counterpane;
   @FXML
@@ -175,7 +175,10 @@ public class LIR4518th implements Initializable {
       }
     }
     //</editor-fold>
-    BufferedReader breader = new BufferedReader(new FileReader("C://T5/4518.txt"));
+//    BufferedReader breader = new BufferedReader(new FileReader("C://T5/4518.txt"));
+    URL url = new URL("file:" + getClass().getResource("/4518th.txt"));
+    System.out.println("url" + " = \n" + url);
+    BufferedReader breader = new BufferedReader(new FileReader(url.toString().substring(5)));
     String linecontent;
     String all = "";
     while ((linecontent = breader.readLine()) != null) {
