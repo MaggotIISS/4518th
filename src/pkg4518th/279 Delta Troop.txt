@@ -14,8 +14,7 @@ DELTA TROOP (LIFT CAVALRY), FIFTH SQUADRON
 		795 Fourth Sqd Ldr (Sgt S3), First Platoon, Delta Troop (Lift Cavalry), Fifth Squadron (Lift Cavalry), 4518th Lift Infantry Regiment
 
 
-	275 Platoon Leader (Lieutenant O2), Second Platoon, Delta Troop (Lift Cavalry), Fifth Squadron (Lift Cavalry), 4518th Lift Infantry Regiment
-	465 Platoon Sergeant (SSG S4), Second Platoon, Delta Troop (Lift Cavalry), Fifth Squadron (Lift Cavalry), 4518th Lift Infantry Regiment
+	275 Platoon Leader (Lieutenant O2), Second Platoon, Delta Troop (Lift Cavalry), Fifth Squadron (Lift Cavalry), 4518th Lift Infantry Regiment	465 Platoon Sergeant (SSG S4), Second Platoon, Delta Troop (Lift Cavalry), Fifth Squadron (Lift Cavalry), 4518th Lift Infantry Regiment
 		787 First Sqd Ldr (Sgt S3), Second Platoon, Delta Troop (Lift Cavalry), Fifth Squadron (Lift Cavalry), 4518th Lift Infantry Regiment
 		813 Second Sqd Ldr (Sgt S3), Second Platoon, Delta Troop (Lift Cavalry), Fifth Squadron (Lift Cavalry), 4518th Lift Infantry Regiment
 		825 Third Sqd Ldr (Sgt S3), Second Platoon, Delta Troop (Lift Cavalry), Fifth Squadron (Lift Cavalry), 4518th Lift Infantry Regiment
@@ -29,9 +28,9 @@ DELTA TROOP (LIFT CAVALRY), FIFTH SQUADRON
 		817 Second Sqd Ldr (Sgt S3), Third Platoon, Delta Troop (Lift Cavalry), Fifth Squadron (Lift Cavalry), 4518th Lift Infantry Regiment
 		829 Third Sqd Ldr (Sgt S3), Third Platoon, Delta Troop (Lift Cavalry), Fifth Squadron (Lift Cavalry), 4518th Lift Infantry Regiment
 		803 Fourth Sqd Ldr (Sgt S3), Third Platoon, Delta Troop (Lift Cavalry), Fifth Squadron (Lift Cavalry), 4518th Lift Infantry Regiment
-*****************************************************************************************************************************************  # Vehicles  Crew   Men
-	2 Tanks     4      0
-	2 APCs      3      0
+*****************************************************************************************************************************************  #    Vehicles  Crew  Men PER PLATOON
+	2 Tanks     2   0
+	2 APCs      2   8
 
 
 

@@ -1,18 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="4518th.jnlp">
-  <information>
-    <title>4518th</title>
-    <vendor>Mark Ferguson</vendor>
-    <description>null</description>
-    <offline-allowed/>
-  </information>
-  <resources>
-    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="4518th.jar" size="1083216" download="eager" />
-  </resources>
-  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="4518th" >
-    <param name="requiredFXVersion" value="8.0+"/>
-  </applet-desc>
-  <jfx:javafx-desc  width="800" height="600" main-class="pkg4518th.Main"  name="4518th" />
-  <update check="always"/>
+<?xml version="1.0" encoding="UTF-8"?><jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="4518th.jnlp">
+    <information>
+        <title>4518th</title>
+        <vendor>Mark Ferguson</vendor>
+        <description>null</description>
+        <offline-allowed/>
+    </information>
+    <update check="always"/>
+    <resources>
+        <j2se version="9+" href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="4518th.jar" size="1083211" download="eager"/>
+    </resources>
+    <jfx:javafx-desc width="800" height="600" main-class="pkg4518th.Main" name="Main"/>
 </jnlp>
+
